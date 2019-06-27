@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="panel">
+        <div class="panel-heading">
+            <h5>Make a Transfer</h5>
+        </div>
+        <div class="panel-body">
+            <form [formGroup]="moneyTransferInput">
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <label for="from_account">FROM ACCOUNT</label>
+                        <input class="form-control" formControlName="from_account" type="text" placeholder="{{main_account}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <label for="to_account">TO ACCOUNT</label>
+                        <input class="form-control" formControlName="to_account" type="text" placeholder="E.g. Indra Philippines">                
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <label for="amount">AMOUNT</label>
+                        <input class="form-control" formControlName="amount" type="text">        
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <button (click)="submit()">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--MODAL FORM-->
